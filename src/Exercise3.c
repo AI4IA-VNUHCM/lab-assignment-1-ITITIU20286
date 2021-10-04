@@ -16,6 +16,25 @@ int main(int argc, char *argv[]) {
 	//testing variable, applying it to your algorithm for auto-evaluating
 	int testcase = atoi(argv[1]);
 	//Your codes here
+		int n,b,i,m; 
+	 
+	printf("Enter a number \n"); 
+	scanf("%d",&m); 
+	for(b=2;b<=m;b++) 
+	{ 
+	 
+ 	 i=2; 
+ 	while(b%i!=0) 
+  	{ 
+  		i++; 
+  	} 
+  	 
+ 	if(i==b) 
+  	{ 
+		printf("%d ",b) ; 
+		}
+	}
+	
 	
 	return 0;
 }
