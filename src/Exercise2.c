@@ -26,18 +26,15 @@ int main(int argc, char *argv[]) {
 			testcase[i] = atoi(argv[i+1]);
 	}
 	//Your codes here
-	int n, max, min;
-	printf(" Input: ");
-	scanf("%d", &n);
-	max = n;
-	min = n;
-	while (n!=0)
+	int n = 9 ,	array[] = { -3, 5, -2, 9, 8, 10, 5, -1, 0 } , min, max;
+	for (int i = 0; i < n; i++)
+	min = max = array[0] ;
+	for (int i = 0; i < n; i++)
 	{
-		if (max < n)
-			max = n;
-		if (min > n)
-			min = n;
-		scanf("%d", &n);
+		if (max < array[i])
+			max = array[i];
+		if (min > array[i])
+			min = array[i];
 	}
 	printf("Max: %d\n", max);
 	printf("Min: %d\n", min);
