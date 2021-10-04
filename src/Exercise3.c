@@ -18,8 +18,7 @@ int main(int argc, char *argv[]) {
 	//Your codes here
 		int n,b,i,m; 
 	 
-	printf("Enter a number \n"); 
-	scanf("%d",&m); 
+	m=10; 
 	for(b=2;b<=m;b++) 
 	{ 
 	 
